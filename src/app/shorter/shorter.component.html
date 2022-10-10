@@ -1,0 +1,34 @@
+<section class="second-container">
+  <form #formShorter="ngForm" (ngSubmit)="onSubmit(formShorter)" class="short-form">
+    <div class="inputs-short-container">
+      <input
+        class="link-area"
+        type="text"
+        name="link"
+        #link="ngModel"
+        [(ngModel)]="shorterLink.link"
+        [ngClass]="{'error': link.touched && !link.valid}"
+        placeholder="Shorten a link here..."
+        required
+      >
+      <input type="submit" value="Shorten It!" id="submit-short-link" [disabled]="!formShorter.form.valid">
+    </div>
+    <span class="required-link" *ngIf="link.touched && !link.valid">Please add a link</span>
+  </form>
+  <!-- <div class="second-containers-links">
+    <p class="second-text-links">https://www.frontendmentor.io</p>
+    <p class="second-links-copy">https://reLink/k4lKyk</p>
+    <button class="second-btn">Copy</button>
+  </div>
+  <div class="second-containers-links">
+    <p class="second-text-links">https://twitter.com/frontendmentor</p>
+    <p class="second-links-copy">https://reLink/gxOXp9</p>
+    <button class="second-btn">Copy</button>
+  </div>
+  <div class="second-containers-links">
+    <p class="second-text-links">https://www.linkedin.com/company/frontend-mentor</p>
+    <p class="second-links-copy">https://reLink/gob3x9</p>
+    <button class="second-btn">Copy</button>
+  </div>*/ -->
+</section>
+
