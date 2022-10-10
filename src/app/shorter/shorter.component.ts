@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ShorterLink } from '../models/link';
 
 @Component({
@@ -6,16 +6,13 @@ import { ShorterLink } from '../models/link';
   templateUrl: './shorter.component.html',
   styleUrls: ['./shorter.component.css']
 })
-export class ShorterComponent implements OnInit {
+export class ShorterComponent{
 
   public shorterLink: ShorterLink;
 
   constructor() {
     this.shorterLink = new ShorterLink('');
    }
-
-  ngOnInit(): void {
-  }
 
   onSubmit(form: any): void {
     console.log('shorter submit event successfully');

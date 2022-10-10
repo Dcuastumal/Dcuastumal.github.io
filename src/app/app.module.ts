@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { routing, appRoutingProviders } from './app.routing';
+import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -22,10 +22,10 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    AppRoutingModule
   ],
   providers: [
-    appRoutingProviders,
+
   ],
   bootstrap: [AppComponent]
 })
