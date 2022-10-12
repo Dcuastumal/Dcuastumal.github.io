@@ -7,11 +7,19 @@ import { navbar } from './models/navbar';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Url-shortening-landing-page';
 
   public navbar: any;
+  public isMenuOpened: boolean = false;
 
   constructor() {
     this.navbar = navbar;
+  }
+
+  toggleMenu():void {
+    this.isMenuOpened = !this.isMenuOpened;
+  }
+
+  clickedOutside():void {
+    this.isMenuOpened = false;
   }
 }

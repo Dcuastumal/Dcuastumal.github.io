@@ -75,6 +75,7 @@ h1 {
     order: 1;
     width: 350px;
     margin-left: 0px;
+    margin-bottom: 30px;
   }
 
   .major-container__text {
@@ -109,7 +110,7 @@ h1 {
     line-height: 2.8rem;
     margin-top: -20px;
     margin-left: -30px;
-    padding: 0 15px;
+    padding: 0 21px;
   }
 }
 
@@ -128,6 +129,7 @@ h1 {
     order: 1;
     width: 350px;
     margin-left: 0px;
+    margin-bottom: 27px;
   }
 
   .major-container__text {
@@ -162,7 +164,7 @@ h1 {
     line-height: 2.8rem;
     margin-top: -20px;
     margin-left: -30px;
-    padding: 0 15px;
+    padding: 0 21px;
   }
 }
 
@@ -181,6 +183,7 @@ h1 {
     order: 1;
     width: 680px;
     margin-left: 0px;
+    margin-bottom: 30px;
   }
 
   .major-container__text {
@@ -214,7 +217,7 @@ h1 {
     line-height: 3.7rem;
     margin-top: -15px;
     margin-left: -30px;
-    padding: 0 15px;
+    padding: 0 21px;
   }
 
   .major-btn {
