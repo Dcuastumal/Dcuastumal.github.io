@@ -219,7 +219,7 @@
   .second-containers-links {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 10px;
     align-items: flex-start;
     background-color: white;
@@ -322,7 +322,7 @@
   .second-containers-links {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 10px;
     align-items: flex-start;
     background-color: white;
@@ -427,7 +427,7 @@
   .second-containers-links {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 10px;
     align-items: flex-start;
     background-color: white;
