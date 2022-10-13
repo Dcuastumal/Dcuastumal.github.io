@@ -1,7 +1,8 @@
 <section class="second-container">
-  <form #formShorter="ngForm" (ngSubmit)="onSubmit(formShorter)" class="short-form">
+  <form #formShorter="ngForm" class="short-form" (ngSubmit)="shortLink(formShorter)">
     <div class="inputs-short-container">
       <input
+        id="url-link"
         class="link-area"
         type="text"
         name="link"
@@ -11,24 +12,36 @@
         placeholder="Shorten a link here..."
         required
       >
-      <input type="submit" value="Shorten It!" id="submit-short-link" [disabled]="!formShorter.form.valid">
+      <input
+        #submitLink
+        type="submit"
+        value="Shorten It!"
+        id="submit-short-link"
+        [disabled]="!formShorter.form.valid"
+        (click)="validate()"
+      >
     </div>
     <span class="required-link" *ngIf="link.touched && !link.valid">Please add a link</span>
   </form>
-  <!-- <div class="second-containers-links">
-    <p class="second-text-links">https://www.frontendmentor.io</p>
-    <p class="second-links-copy">https://reLink/k4lKyk</p>
-    <button class="second-btn">Copy</button>
+
+  <div class="dropdown-link-box" >
+    <div class="second-containers-links" *ngIf="btn === true">
+      <p class="second-text-links">{{link_saved.original_link}}</p>
+      <hr class="hr-short-links">
+      <div class="shortened-link-box">
+        <p class="second-links-copy">{{link_saved.short_link}}</p>
+        <button #btnCopy class="second-btn" [cdkCopyToClipboard]="link_saved.short_link" (click)="changeColor()">{{sBtn}}</button>
+      </div>
+    </div>
+    <div class="second-containers-links" *ngIf="btn === true">
+      <p class="second-text-links">{{link_saved.original_link}}</p>
+      <hr class="hr-short-links">
+      <div class="shortened-link-box">
+        <p class="second-links-copy">{{link_saved.full_short_link}}</p>
+        <button #btnCopyFull class="second-btn" [cdkCopyToClipboard]="link_saved.short_link" (click)="changeColor2()">{{sBtn2}}</button>
+      </div>
+    </div>
   </div>
-  <div class="second-containers-links">
-    <p class="second-text-links">https://twitter.com/frontendmentor</p>
-    <p class="second-links-copy">https://reLink/gxOXp9</p>
-    <button class="second-btn">Copy</button>
-  </div>
-  <div class="second-containers-links">
-    <p class="second-text-links">https://www.linkedin.com/company/frontend-mentor</p>
-    <p class="second-links-copy">https://reLink/gob3x9</p>
-    <button class="second-btn">Copy</button>
-  </div>*/ -->
+
 </section>
 

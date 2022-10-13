@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -22,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ClipboardModule
   ],
   providers: [
 
