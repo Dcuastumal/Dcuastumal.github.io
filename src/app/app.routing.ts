@@ -2,13 +2,15 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from "./home/home.component";
-import { FeaturesComponent } from "./features/features.component";
+import { ErrorComponent } from "./error/error.component";
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'features', component: FeaturesComponent},
-  {path: '**', component: FeaturesComponent}
+  {path: 'features', component: ErrorComponent},
+  {path: 'pricing', component: ErrorComponent},
+  {path: 'resources', component: ErrorComponent},
+  {path: '**', component: ErrorComponent}
 
 ];
 

@@ -228,3 +228,52 @@ h1 {
     font-size: 3rem;
   }
 }
+
+@media only screen and (min-width: 1366px) and (max-width: 1399px) {
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .h12 {
+    margin-top: -20px;
+  }
+
+  .major-container__text {
+    padding-right: 60px;
+  }
+
+  .major-p {
+    margin-top: -5px;
+  }
+
+  .woking-img {
+    width: 640px;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .h12 {
+    margin-top: -25px;
+  }
+
+  .major-container__text {
+    padding-right: 60px;
+  }
+
+  .major-p {
+    margin-top: -7px;
+  }
+
+  .woking-img {
+    width: 640px;
+  }
+
+}
+

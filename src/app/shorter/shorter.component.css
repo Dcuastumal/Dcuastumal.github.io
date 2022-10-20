@@ -476,3 +476,59 @@
     font-size: 1.8rem;
   }
 }
+
+@media only screen and (min-width: 1366px) and (max-width: 1399px) {
+
+  .short-form {
+    width: 1200px;
+    height: 155px;
+  }
+
+  .dropdown-link-box {
+    width: 83.5%;
+    flex-wrap: wrap;
+  }
+
+  .second-text-links {
+    font-size: 1.5rem;
+    width: 61%;
+  }
+
+  .second-links-copy {
+    font-size: 1.5rem;
+  }
+
+  .shortened-link-box {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .short-form {
+    width: 1200px;
+    height: 155px;
+  }
+
+  .dropdown-link-box {
+    width: 83.5%;
+    flex-wrap: wrap;
+  }
+
+  .second-text-links {
+    font-size: 1.5rem;
+    width: 61%;
+  }
+
+  .second-links-copy {
+    font-size: 1.5rem;
+  }
+
+  .shortened-link-box {
+    display: flex;
+    align-items: center;
+  }
+
+}

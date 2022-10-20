@@ -366,3 +366,44 @@
   }
 }
 
+@media only screen and (min-width: 1366px) and (max-width: 1399px) {
+
+  .main-container-statisctic__boxes {
+    width: 1200px;
+  }
+
+  .main-container-statistics__text {
+    margin-bottom: 90px;
+  }
+
+  .statistic-box {
+    width: 365px;
+    height: 400px;
+  }
+
+  .footer-statistics-title {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .main-container-statisctic__boxes {
+    width: 1200px;
+  }
+
+  .main-container-statistics__text {
+    margin-bottom: 90px;
+  }
+
+  .statistic-box {
+    width: 365px;
+    height: 400px;
+  }
+
+  .footer-statistics-title {
+    margin-bottom: 10px;
+  }
+
+}
